@@ -123,3 +123,24 @@ footer{
     text-align: center;
     font-size: 15px;
 }
+
+@media screen and(max-width:480px){
+    .caja-ingresar-texto{
+        width: 50%;
+    }
+    .boton{
+        width: 40%;
+        margin: 0px 4px;
+        font-size: 9px;
+    }
+    .texto-advertencia{
+        font-size: 12px;
+    }
+    .cuadro-mostrar-texto{
+        width: 30%;
+    }
+    .copiar{
+        width: 50%;
+        left: 17%;
+    }
+}

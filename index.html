@@ -14,10 +14,10 @@
             <section class="caja-ingresar-texto">
                 <img class="logo" src="imagenes/logo.png">
                 <div class="caja-ingresar">
-                    <textarea class="ingresar-texto"  placeholder="Ingrese el texto aqui" cols="700" rows="10" required></textarea>
+                    <textarea class="ingresar-texto" id="ingresar-texto" placeholder="Ingrese el texto aqui" cols="700" rows="10" required></textarea>
                 </div>
                 <div class="botones">
-                    <p class="texto-advertencia"> Solo letras minusculas, sin caracteres especiales.</p>
+                    <p class="texto-advertencia"> Solo letras minusculas, sin caracteres especiales!.</p>
                     <button id="encriptar" class="boton">Encriptar</button>
                     <button id="desencriptar" class="boton">Desencriptar</button>
                 </div>
@@ -93,7 +93,7 @@
                     bandera = true;
                 }
                 
-                
+                document.getElementById("ingresar-texto").value = "";
                 document.getElementById('id-copiar').style.visibility = "visible"
                 document.getElementById('mostrar-texto').innerHTML= ""
                 document.getElementById('mostrar-texto').innerHTML= textoEncriptado.join("");
@@ -151,6 +151,7 @@
                     bandera = true;
                 }
                 
+                document.getElementById("ingresar-texto").value = "";
                 document.getElementById('id-copiar').style.visibility = "visible"
                 document.getElementById('mostrar-texto').innerHTML= ""
                 document.getElementById('mostrar-texto').innerHTML = textoDesencriptado.join("");
