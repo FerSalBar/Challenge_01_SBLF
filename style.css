@@ -125,6 +125,7 @@ footer{
 }
 
 @media screen and(max-width:480px){
+    
     .caja-ingresar-texto{
         width: 50%;
     }
